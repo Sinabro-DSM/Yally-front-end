@@ -1,0 +1,9 @@
+# node modules
+/node_modules
+
+# bundle files
+/dist
+
+# OS generated file
+.DS_Store
+**/.DS_Store
