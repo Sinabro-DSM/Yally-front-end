@@ -1,3 +1,4 @@
-import background from "./public/background.png";
+import backgroundLeft from "./public/background-left.png";
+import backgroundRight from "./public/background-right.png";
 
-export { background };
+export { backgroundLeft, backgroundRight };
