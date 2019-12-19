@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
   entry: ["@babel/polyfill", __dirname + "/src/index.tsx"],
@@ -45,7 +46,7 @@ module.exports = {
             loader: "url-loader",
             options: {
               name: "[name].[ext]?[hash]",
-              publicPath: "/dist",
+              publicPath: "./dist/",
               limit: 20000
             }
           }
@@ -64,7 +65,12 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
     alias: {
-      "react-dom": "@hot-loader/react-dom"
+      "react-dom": "@hot-loader/react-dom",
+      Assets: path.resolve(__dirname, "src/assets/"),
+      Container: path.resolve(__dirname, "src/container/"),
+      Pages: path.resolve(__dirname, "src/pages/"),
+      Components: path.resolve(__dirname, "src/components/"),
+      Store: path.resolve(__dirname, "src/store/")
     }
   },
   plugins: [
