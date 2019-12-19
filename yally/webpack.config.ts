@@ -66,11 +66,11 @@ module.exports = {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
     alias: {
       "react-dom": "@hot-loader/react-dom",
-      Assets: path.resolve(__dirname, "src/assets/"),
-      Container: path.resolve(__dirname, "src/container/"),
-      Pages: path.resolve(__dirname, "src/pages/"),
-      Components: path.resolve(__dirname, "src/components/"),
-      Store: path.resolve(__dirname, "src/store/")
+      "Assets": path.resolve(__dirname, "src/assets/"),
+      "Container": path.resolve(__dirname, "src/container/"),
+      "Pages": path.resolve(__dirname, "src/pages/"),
+      "Components": path.resolve(__dirname, "src/components/"),
+      "Store": path.resolve(__dirname, "src/store/")
     }
   },
   plugins: [
